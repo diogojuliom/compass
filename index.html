@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Muli:400,400italic,300italic,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Muli|Poiret+One' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div class="login col-md-4 col-md-offset-4">
@@ -26,10 +26,41 @@
 				</div>
 			</form>
 			<form id="perdilogin">
-
+				<h1>Perdi login e senha</h1>
+				<div class="form-group">
+					<input type="email" class="form-control" name="perdi-email" placeholder="Informe seu e-mail válido" required >
+				</div>
+				<div class="form-group">
+					<input type="submit" name="perdi-senha" value="Recuperar" class="btn btn-success pull-right">
+				</div>
 			</form>
-			<a href="#" class="btn btn-danger">Perdi login e senha</a>
-			<a href="#" class="btn btn-danger">Mudar minha senha</a>
+			<form id="mudarsenha"style="height: 400px;">
+				<h1>Recuperar minha senha</h1>
+				<div class="form-group">
+					<input type="text" name="loginatual" placeholder="Informe seu login atual" class="form-control" required />
+				</div>
+				<div class="form-group">
+					<input type="password" name="senhaatual" placeholder="Informe sua senha atual" class="form-control" required />
+				</div>
+				<div class="form-group">
+					<input type="password" name="novasenha" placeholder="Informe sua nova senha" class="form-control" required />
+				</div>
+				<div class="form-group">
+					<input type="text" name="redigitanovasenha" placeholder="Redigite sua nova senha" class="form-control" required />
+				</div>
+				<div class="form-group">
+					<input type="text" name="nomecompleto" placeholder="Informe seu nome completo" class="form-control" required />
+				</div>
+				<div class="form-group">
+					<input type="email" name="loginatual" placeholder="Informe seu e-mail" class="form-control" required />
+				</div>
+				<div class="form-group">
+					<input type="submit" name="muda-senha" class="btn btn-success pull-right" value="Recadastrar!" />
+				</div>
+			</form>
+			<a id="linkvoltarlogin" href="#" class="btn btn-danger">Voltar ao login</a>
+			<a href="#" id="linkperdilogin" class="btn btn-danger">Perdi login e senha</a>
+			<a href="#" id="linkmudarsenha" class="btn btn-danger">Mudar minha senha</a>
 		</div>
 	</body>
 

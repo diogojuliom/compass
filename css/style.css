@@ -1,3 +1,7 @@
+body{
+	background: url('../imgs/bg_compass.jpg') no-repeat;
+	background-size: cover;
+}
 div.login{
 	background: rgba(0,0,0,0.2);
 	margin-top: 50px;
@@ -6,5 +10,28 @@ div.login{
 	border-radius: 7px;
 }
 div.login form{
-	min-height: 140px;
+	min-height: 220px;
+}
+form h1{
+	font-family: 'Muli',sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 0px;
+    color: #B81F24;
+    margin-bottom: 20px;
+}
+#perdilogin{
+	display: none;
+}
+#linkvoltarlogin{
+	display: none;
+}
+#mudarsenha{
+	display: none;
+}
+
+@media (max-width:767px){
+	body{
+		background-size: 300%;
+	}
 }
