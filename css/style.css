@@ -4,22 +4,22 @@ body{
 }
 div.login{
 	background: rgba(255,255,255,0.9);
-    margin-top: 50px;
-    padding: 5px;
-    border: 1px solid #FFF;
-    box-shadow: 0 0 10px #000;
-    border-radius: 7px;
+	margin-top: 50px;
+	padding: 5px;
+	border: 1px solid #FFF;
+	box-shadow: 0 0 10px #000;
+	border-radius: 7px;
 }
 div.login form{
 	min-height: 220px;
 }
 form h1{
 	font-family: 'Muli',sans-serif;
-    font-weight: bolder;
-    text-align: center;
-    margin-top: 0px;
-    color: #B81F24;
-    margin-bottom: 20px;
+	font-weight: bolder;
+	text-align: center;
+	margin-top: 0px;
+	color: #B81F24;
+	margin-bottom: 20px;
 }
 #perdilogin{
 	display: none;
@@ -30,6 +30,30 @@ form h1{
 #mudarsenha{
 	display: none;
 }
+header .input-group{
+	margin-top: 35px;
+}
+a.carrinho{
+	color: #B81F24;
+	font-size: 40px;
+}
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group{
+	height: 34px;
+}
+header .badge{
+	position: relative;
+	top: -18px;
+	left: -20px;
+	background: #B81F24;
+	box-shadow: 0 0 2px #000;
+}
+a.carrinho:hover{
+	text-decoration: none;
+}
+div.carrinho{
+	margin-top: 20px;
+}
+
 
 @media (max-width:767px){
 	body{
