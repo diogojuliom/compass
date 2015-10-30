@@ -53,16 +53,57 @@ a.carrinho:hover{
 div.carrinho{
 	margin-top: 20px;
 }
-
+header{
+	min-height: 100px;
+}
+ul.nav-pills{
+	margin-bottom: 20px;
+	width: 255px;
+	background: rgba(255,255,255,0.9);
+}
+ul.nav-pills li a:hover{
+	background: rgba(184, 31, 36, 0.71);
+	color: #FFF;
+	border-radius: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+ul.nav-pills li.active a{
+	background: #B81F24;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: none;
+	font-size: 20px;
+	border-radius: 0;
+}
+ul.nav-pills li a{
+	font-family: 'Muli',sans-serif;
+	font-size: 15px;
+	color: #B81F24;
+}
+#corpo{
+	margin-left: 255px;
+	padding: 15px;
+	float: right;
+}
 
 @media (max-width:767px){
 	body{
 		background-size: 300%;
 		padding: 10px;
 	}
+	ul.nav-pills{
+		display: none;
+	}
 }
 @media (min-width:768px) and (max-width:991px){
 	body{
 		padding: 10px;
+	}
+	ul.nav-pills{
+		display: none;
 	}
 }
