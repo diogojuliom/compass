@@ -3,11 +3,12 @@ body{
 	background-size: cover;
 }
 div.login{
-	background: rgba(0,0,0,0.2);
-	margin-top: 50px;
-	padding: 5px;
-	border:1px solid #000;
-	border-radius: 7px;
+	background: rgba(255,255,255,0.9);
+    margin-top: 50px;
+    padding: 5px;
+    border: 1px solid #FFF;
+    box-shadow: 0 0 10px #000;
+    border-radius: 7px;
 }
 div.login form{
 	min-height: 220px;
@@ -33,5 +34,11 @@ form h1{
 @media (max-width:767px){
 	body{
 		background-size: 300%;
+		padding: 10px;
+	}
+}
+@media (min-width:768px) and (max-width:991px){
+	body{
+		padding: 10px;
 	}
 }
