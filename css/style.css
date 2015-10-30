@@ -87,7 +87,9 @@ ul.nav-pills li a{
 #corpo{
 	margin-left: 255px;
 	padding: 15px;
-	float: right;
+}
+div.menus{
+	float: left;
 }
 
 @media (max-width:767px){
