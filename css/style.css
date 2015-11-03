@@ -96,39 +96,66 @@ ul.nav-pills li a{
 div.menus{
 	float: left;
 }
-#lancamentos h1, #destaques h1{
+h1{
 	font-family: 'Muli',sans-serif;
-    color: #B81F24;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 15px;
+	color: #B81F24;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 15px;
 }
 h2.nomeProduto{
 	font-family: 'Muli',sans-serif;
-    color: #B81F24;
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 5px;
+	color: #B81F24;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 5px;
 }
 div.stars{
 	color: yellowgreen;
-    font-size: 18px;
-    float: left;
+	font-size: 18px;
+	float: left;
 }
 p.preco{
 	text-align: right;
 	font-family: 'Muli',sans-serif;
 	color: #5cb85c;
 	font-size: 20px;
-    font-weight: bold;
+	font-weight: bold;
 }
 p.descProduto{
 	font-family: 'Muli',sans-serif;
 	font-size: 15px;
 	text-align: justify;
 }
-
-
+table.carrinho{
+	background: rgba(255,255,255,0.6);
+}
+table.carrinho th{
+	text-align: center;
+}
+.table>tbody>tr>td{
+	text-align: center;
+}
+.table>tbody>tr>td>a{
+	color: #B81F24;
+	font-size: 30px;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+body{
+	padding: 5px;
+}
+p.precoPedido{
+	font-size: 20px;
+	font-family: "Muli",sans-serif;
+	font-weight: bold;
+	color: #B81F24;
+}
+p.precoPedido span{
+	font-size: 25px;
+}
+h1.carrinho{
+	margin-left: 0;
+}
 
 
 @media (max-width:767px){
