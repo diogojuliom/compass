@@ -71,6 +71,11 @@ ul.nav-pills li a:hover{
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+ul.nav-pills li.active a:hover{
+	background: #B81F24;
+	color: #FFF;
+	border-radius: 0;
+}
 ul.nav-pills li.active a{
 	background: #B81F24;
 	text-align: center;
@@ -91,6 +96,40 @@ ul.nav-pills li a{
 div.menus{
 	float: left;
 }
+#lancamentos h1, #destaques h1{
+	font-family: 'Muli',sans-serif;
+    color: #B81F24;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+h2.nomeProduto{
+	font-family: 'Muli',sans-serif;
+    color: #B81F24;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+div.stars{
+	color: yellowgreen;
+    font-size: 18px;
+    float: left;
+}
+p.preco{
+	text-align: right;
+	font-family: 'Muli',sans-serif;
+	color: #5cb85c;
+	font-size: 20px;
+    font-weight: bold;
+}
+p.descProduto{
+	font-family: 'Muli',sans-serif;
+	font-size: 15px;
+	text-align: justify;
+}
+
+
+
 
 @media (max-width:767px){
 	body{
@@ -100,6 +139,9 @@ div.menus{
 	ul.nav-pills{
 		display: none;
 	}
+	#corpo{
+		margin-left: 0;
+	}
 }
 @media (min-width:768px) and (max-width:991px){
 	body{
@@ -107,5 +149,8 @@ div.menus{
 	}
 	ul.nav-pills{
 		display: none;
+	}
+	#corpo{
+		margin-left: 0;
 	}
 }
