@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Muli|Poiret+One' rel='stylesheet' type='text/css'>
 </head>
@@ -37,36 +38,51 @@
 		<div class="menus">
 			<ul class="nav nav-pills nav-stacked">
 				<li role="presentation" class="active"><a href="#">Departamentos</a></li>
-				<li><a href="#">Brindes</a></li>
-				<li><a href="#">Comercial</a></li>
-				<li><a href="#">Contratos</a></li>
-				<li><a href="#">DVD Awards/Institucional</a></li>
-				<li><a href="#">Manuais Administrativos</a></li>
-				<li><a href="#">Manuais Comerciais</a></li>
-				<li><a href="#">Manuais Pedagógicos</a></li>
-				<li><a href="#">Material Didático Avulso</a></li>
-				<li><a href="#">Material Didático Completo</a></li>
-				<li><a href="#">Pedagógico</a></li>
-				<li><a href="#">PINs</a></li>
+				<li><a href="departamento.html">Brindes</a></li>
+				<li><a href="departamento.html">Comercial</a></li>
+				<li><a href="departamento.html">Contratos</a></li>
+				<li><a href="departamento.html">DVD Awards/Institucional</a></li>
+				<li><a href="departamento.html">Manuais Administrativos</a></li>
+				<li><a href="departamento.html">Manuais Comerciais</a></li>
+				<li><a href="departamento.html">Manuais Pedagógicos</a></li>
+				<li><a href="departamento.html">Material Didático Avulso</a></li>
+				<li><a href="departamento.html">Material Didático Completo</a></li>
+				<li><a href="departamento.html">Pedagógico</a></li>
+				<li><a href="departamento.html">PINs</a></li>
 			</ul>
 			<ul class="nav nav-pills nav-stacked">
 				<li role="presentation" class="active"><a href="#">Produtos em Destaque</a></li>
-				<li><a href="#">Brindes</a></li>
-				<li><a href="#">Comercial</a></li>
-				<li><a href="#">Contratos</a></li>
-				<li><a href="#">DVD Awards/Institucional</a></li>
-				<li><a href="#">Manuais Administrativos</a></li>
-				<li><a href="#">Manuais Comerciais</a></li>
-				<li><a href="#">Manuais Pedagógicos</a></li>
-				<li><a href="#">Material Didático Avulso</a></li>
-				<li><a href="#">Material Didático Completo</a></li>
-				<li><a href="#">Pedagógico</a></li>
-				<li><a href="#">PINs</a></li>
+				<li><a href="produto.html">Pesquisa Aval. Master</a></li>
+				<li><a href="produto.html">Pesquisa Avaliativa MYP</a></li>
+				<li><a href="produto.html">Pesquisa Aval. College</a></li>
+				<li><a href="produto.html">Kit College Completo</a></li>
+				<li><a href="produto.html">Registro de Contratos</a></li>
+				<li><a href="produto.html">Bloco Referidos</a></li>
+				<li><a href="produto.html">Pesquisa Aval. Cultural</a></li>
+				<li><a href="produto.html">Pasta Consultor</a></li>
+				<li><a href="produto.html">Agenda de Marcação</a></li>
 			</ul>
 		</div>
 		<div id="corpo">
 			<div class="col-md-6">
-				<img class="img-responsive center-block" src="http://lorempixel.com/600/400/">
+				<section class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li data-thumb="imgs/kitchen_adventurer_cheesecake_brownie.jpg">
+								<img src="imgs/kitchen_adventurer_cheesecake_brownie.jpg" />
+							</li>
+							<li data-thumb="imgs/kitchen_adventurer_lemon.jpg">
+								<img src="imgs/kitchen_adventurer_lemon.jpg" />
+							</li>
+							<li data-thumb="imgs/kitchen_adventurer_donut.jpg">
+								<img src="imgs/kitchen_adventurer_donut.jpg" />
+							</li>
+							<li data-thumb="imgs/kitchen_adventurer_caramel.jpg">
+								<img src="imgs/kitchen_adventurer_caramel.jpg" />
+							</li>
+						</ul>
+					</div>
+				</section>
 			</div>
 			<div class="col-md-6">
 				<h1 class="nomeProduto">Nome do Produto</h1>
@@ -76,10 +92,20 @@
 					<strong>Código: </strong>UP00/38
 				</p>
 				<div class="col-md-6">
-					<label>Quantidade:</label>
-					<input type="number" name="quantidade" min="1" max="100" class="form-control" />
+					<!-- <label>Quantidade:</label> -->
+					<input type="number" name="quantidade" min="1" max="100" class="form-control" placeholder="Informe a quantidade desejada" />
 				</div>
-				<a class="btn btn-success" href="carrinho.html">
+				<div class="col-md-6 forma-pagamento">
+					<!-- <label>Forma de pagamento:</label> -->
+					<select class="form-control">
+						<option>Selecione a forma de pagamento</option>
+						<option>Dinheiro</option>
+						<option>Cartão de débito</option>
+						<option>Cartão de crédito (até 4x)</option>
+						<option>Transferência bancária</option>
+					</select>
+				</div>
+				<a class="btn btn-success btn-compra-produto" href="carrinho.html">
 					<i class="fa fa-shopping-cart"></i> Comprar
 				</a>
 			</div>
@@ -90,4 +116,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/site.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+	$('.flexslider').flexslider({
+		animation: "slide",
+		controlNav: "thumbnails",
+		start: function(slider){
+			$('body').removeClass('loading');
+		}
+	});
+});
+</script>
 </html>

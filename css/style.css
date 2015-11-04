@@ -126,6 +126,7 @@ p.descProduto{
 	font-family: 'Muli',sans-serif;
 	font-size: 15px;
 	text-align: justify;
+	margin-left: 15px;
 }
 table.carrinho{
 	background: rgba(255,255,255,0.6);
@@ -150,23 +151,41 @@ p.precoPedido{
 	font-weight: bold;
 	color: #B81F24;
 }
+p.precoProduto{
+	font-family: "Muli",sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: #5cb85c;
+	margin-left: 15px;
+}
 p.precoPedido span{
 	font-size: 25px;
 }
 h1.carrinho{
 	margin-left: 0;
 }
+.btn-compra-produto{
+	margin-left: 15px;
+	margin-top: 10px;
+}
 
 
 @media (max-width:767px){
 	body{
-		background-size: 300%;
+		background-size: 400%;
 		padding: 10px;
 	}
 	ul.nav-pills{
 		display: none;
 	}
 	#corpo{
+		margin-left: 0;
+	}
+	.forma-pagamento{
+		margin-top: 10px;
+	}
+	h1.nomeProduto{
+		text-align: center;
 		margin-left: 0;
 	}
 }
@@ -178,6 +197,13 @@ h1.carrinho{
 		display: none;
 	}
 	#corpo{
+		margin-left: 0;
+	}
+	.forma-pagamento{
+		margin-top: 10px;
+	}
+	h1.nomeProduto{
+		text-align: center;
 		margin-left: 0;
 	}
 }
