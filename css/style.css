@@ -229,14 +229,17 @@ header .list-group-item:hover{
 	header .panel-group{
 		display: block;
 	}
-	#lancamentos{
+	#lancamentos,#produtos-recomentdados{
 		height: 470px;
 		overflow: auto;
 		background: rgba(255,255,255,0.7);
 	}
-	#lancamentos::-webkit-scrollbar { width:10px; background:rgba(255,255,255,0.3); }  configurando scroll 
-	#lancamentos::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
-	#lancamentos::-webkit-scrollbar-thumb { border-radius:10px; background:rgba(184, 31, 36, 0.3);  }
+	#produtos-recomentdados{
+		margin-top: 10px;
+	}
+	#lancamentos,#produtos-recomentdados::-webkit-scrollbar { width:10px; background:rgba(255,255,255,0.3); }  configurando scroll 
+	#lancamentos,#produtos-recomentdados::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
+	#lancamentos,#produtos-recomentdados::-webkit-scrollbar-thumb { border-radius:10px; background:rgba(184, 31, 36, 0.3);  }
 }
 @media (min-width:768px) and (max-width:991px){
 	body{
@@ -258,12 +261,15 @@ header .list-group-item:hover{
 	header .panel-group{
 		display: block;
 	}
-	#lancamentos{
+	#lancamentos,#produtos-recomentdados{
 		height: 470px;
 		overflow: auto;
 		background: rgba(255,255,255,0.7);
 	}
-	#lancamentos::-webkit-scrollbar { width:10px; background:#FFF; } /* configurando scroll */
-	#lancamentos::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
-	#lancamentos::-webkit-scrollbar-thumb { border-radius:10px; background:rgba(184, 31, 36, 0.3);  }
+	#produtos-recomentdados{
+		margin-top: 10px;
+	}
+	#lancamentos,#produtos-recomentdados::-webkit-scrollbar { width:10px; background:#FFF; } /* configurando scroll */
+	#lancamentos,#produtos-recomentdados::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
+	#lancamentos,#produtos-recomentdados::-webkit-scrollbar-thumb { border-radius:10px; background:rgba(184, 31, 36, 0.3);  }
 }
